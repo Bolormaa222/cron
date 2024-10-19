@@ -12,7 +12,7 @@ app.get("/status", (request, response) => {
 });
 
 app.listen(8080, () => {
-    console.log("Server Listening on PORT:", port);
+    console.log("Server Listening on PORT:", 8080);
 });
 
 cron.schedule('* * * * *', async () => {
