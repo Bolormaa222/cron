@@ -31,6 +31,9 @@ cron.schedule('* * * * *', async () => {
     let res = await result.json()
     console.log("res ", res)
   });
+
+
+  
   cron.schedule('* * * * *', async () => {
     console.log('running every minute 1, 2, 4 and 5');
     const result = await fetch("https://elearnclient.onrender.com/",{
