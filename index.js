@@ -12,7 +12,7 @@ app.get("/status", (request, response) => {
 });
 app.get("/cron", (request, response) => {
     const status = {
-       "Status": "Running"
+       "Status": "Running again"
     };
     
     
@@ -33,7 +33,7 @@ cron.schedule('* * * * *', async () => {
   });
 
 
-  
+
   cron.schedule('* * * * *', async () => {
     console.log('running every minute 1, 2, 4 and 5');
     const result = await fetch("https://elearnclient.onrender.com/",{
